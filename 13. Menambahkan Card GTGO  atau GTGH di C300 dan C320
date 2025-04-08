@@ -1,1 +1,14 @@
 Script Register Card 
+Menambahkan Card GTGO / GTGH di C300/C320
+Register GTGH
+#conf t
+#add-card rackno 1 shelfno 1 slotno 2 GTGH
+#end
+#wr
+
+Status INSERVICE
+#conf t
+#int gpon-olt_1/2/1-16
+#no sh
+#end
+#wr
